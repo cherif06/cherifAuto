@@ -37,7 +37,7 @@ $paiements = $requete->fetchAll();
                 </div>
             </div>
             <div class="bottom">
-                <p><span><?= round(total_revenu_par('Par carte',$connect)/total_revenu($connect)*100) ?>%</span> du revenu total</p>
+                <p><span><?php if(total_revenu($connect)!=0) round(total_revenu_par('Par carte',$connect)/total_revenu($connect)*100); else echo '0' ?>%</span> du revenu total</p>
             </div>
         </div>
 
@@ -52,7 +52,7 @@ $paiements = $requete->fetchAll();
                 </div>
             </div>
             <div class="bottom">
-                <p><span><?= round(total_revenu_par('Par espéce',$connect)/total_revenu($connect)*100) ?>%</span> du revenu total</p>
+                <p><span><?php if(total_revenu($connect)!=0) round(total_revenu_par('Par espéce',$connect)/total_revenu($connect)*100); else echo '0' ?>%</span> du revenu total</p>
             </div>
         </div>
 
@@ -67,7 +67,7 @@ $paiements = $requete->fetchAll();
                 </div>
             </div>
             <div class="bottom">
-                <p><span><?= round(total_revenu_par('Par cheque',$connect)/total_revenu($connect)*100) ?>%</span> du revenu total</p>
+                <p><span><?php if(total_revenu($connect)!=0) round(total_revenu_par('Par cheque',$connect)/total_revenu($connect)*100); else echo '0' ?>%</span> du revenu total</p>
             </div>
         </div>
 
