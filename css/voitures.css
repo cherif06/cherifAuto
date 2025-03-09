@@ -1,0 +1,101 @@
+:root {
+    --bleu: rgba(44, 62, 80, 1);
+    --vert: rgb(61, 143, 63);
+    --orange: rgba(255, 152, 0, 1)
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    padding-top: 8vw;
+    width: 98.9vw;
+}
+main .texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+main .texte h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+    border-bottom: solid black 1px ;
+}
+main .texte p{
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+}
+.voitures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 6vw 10vw 8vw 10vw;
+}
+.voiture{
+    margin: 0 2.5vw;
+}
+.voiture .img img{
+    height: 6vw;
+}
+.voiture .marque{
+    position: relative;
+    top: 2vw;
+    background-color: rgba(217, 217, 217, 1);
+    text-align: center;
+    padding: 0.2vw 0;
+    border-radius: 0.5vw;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border: var(--bleu) 2px solid;
+}
+.voiture .img{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    position: relative;
+    top: 2vw;
+}
+.voiture .detail{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 1vw;
+    padding: 2vw 1vw 1vw 1vw;
+    height: 15vw;
+    border: var(--bleu) 1px solid;
+}
+.voiture .detail div{
+    margin-bottom: 0.5vw;
+    font-size: 1.1vw;
+}
+.statut{
+    font-size: 0.8vw;
+}
+.statut span{
+    background-color:var(--bleu) ;
+    padding: 0.1vw 0.4vw;
+    border-radius: 0.5vw;
+    color: white;
+    font-size: 0.8vw;
+}
+.voiture button{
+    background-color: var(--bleu);
+    color: white;
+    border-radius: 0.8vw;
+    border: none;
+    font-size: 1.2vw;
+    padding: 0.1vw 0.8vw;
+    margin-left: 1vw;
+    transition-duration: 200ms;
+}
+.voiture button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

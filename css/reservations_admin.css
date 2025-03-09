@@ -1,0 +1,142 @@
+:root {
+    --bleu: rgba(44, 62, 80, 1);
+    --vert: rgb(61, 143, 63);
+    --orange: rgba(255, 152, 0, 1)
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+}
+main{
+    width: 82.5vw;
+    margin-left: 17.5vw;
+    display: grid;
+    background-color: rgba(242, 242, 242, 1);
+}
+.reservations {
+    margin:2vw 0;
+    display: grid;
+    flex-direction: column-reverse;
+    grid-template-columns: 50% 50%;
+}
+.bloc{
+    margin: 0 0.5vw 2vw 0.5vw;
+}
+.reservation {
+    display: flex;    
+    height: 12vw;
+    background-color: white;
+    border-radius:0 0 1vw 1vw;
+    padding: 0 0.5vw;
+}
+.entete{
+    border: var(--bleu) 3px solid;
+    text-align: center;
+    border-radius: 0.5vw ;
+}
+.entete h2{
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: black;
+}
+.image_voiture {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 2vw;
+    width: 27.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vw 0;
+        border: var(--bleu) 1px solid;
+}
+
+.image_voiture img {
+    width: 90%;
+
+}
+
+.detail_reservation {
+    width: 47.5%;
+    padding: 0.5vw 1vw;
+}
+
+.detail_reservation input {
+    border: none;
+    font-size: 0.8vw;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 0.15vw 0.5vw;
+    border-radius: 0.5vw;
+    width: 60%;
+    margin-bottom: 0.2vw;
+        border: var(--bleu) 1px solid;
+}
+
+.plaque input {
+    width: 35%;
+}
+
+.date_debut input {
+    width: 50%;
+}
+
+.date_fin input {
+    width: 50%;
+}
+
+.detail_reservation label {
+    font-size: 0.8vw;
+}
+
+.detail_reservation button {
+    border: none;
+    background-color: var(--bleu);
+    color: white;
+    font-size: 1.1vw;
+    border-radius: 0.8vw;
+    padding: 0.2vw 0.8vw;
+    font-weight: 500;
+    margin: 0.5vw 0.5vw 0 0;
+    transition-duration: 200ms;
+}
+
+.detail_reservation button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.paiement {
+    width: 25%;
+    border: var(--bleu) 3px solid;
+    border-radius: 1vw;
+    text-align: center;
+    padding-top: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.paiement h2 {
+    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
+}
+
+.paiement p {
+    font-size: 0.8vw;
+    margin: 0 0.5vw 0.8vw 0.5vw;
+}
+
+.notification {
+    margin-left: 6vw;
+}
+
+.no_reserv {
+    font-size: 2.5vw;
+    justify-self: center;
+    margin: 5vw 0;
+}
+html {
+    scroll-behavior: smooth;
+}

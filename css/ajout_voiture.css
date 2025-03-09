@@ -1,0 +1,105 @@
+:root {
+    --bleu: rgba(44, 62, 80, 1);
+    --vert: rgb(61, 143, 63);
+    --orange: rgba(255, 152, 0, 1)
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    
+}
+
+main {
+    width: 82.5vw;
+    margin-left: 17.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(242, 242, 242, 1);
+}
+form{
+    background-color: white;
+    padding: 1vw 2vw;
+    text-align: center;
+    margin-bottom: 5vw;
+    border-radius: 1.5vw;
+    box-shadow: var(--bleu) 0 0 1vw;
+}
+form h1{
+    color: var(--bleu);
+    font-size: 2.5vw;
+}
+form input{
+    margin-top: 1vw;
+    border: none;
+    font-size: 1.4vw;
+    background-color: rgba(217, 217, 217, 1);
+    border: var(--bleu) 1px solid;
+    padding: 0.35vw 0.5vw;
+    border-radius: 0.5vw;
+    width: 70%;
+    text-align: center;
+}
+form select{
+    margin-top: 1vw;
+    border: none;
+    font-size: 1.2vw;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 0.35vw 0.5vw;
+    border-radius: 0.5vw;
+    width: 70%;
+    text-align: center;
+    border: var(--bleu) 1px solid;
+}
+form span{
+    font-size: 1.4vw;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 0.35vw 0.5vw;
+    border-radius:0 0.5vw 0.5vw 0;
+    border: var(--bleu) 1px solid;
+}
+form label{
+    font-size: 1.4vw;
+}
+.prix{
+    border-radius:0.5vw 0 0 0.5vw;
+    padding-left: 7vw;
+    width: 50%;
+    margin-bottom: 1vw;
+}
+.file{
+    margin-top: 0.2vw;
+    font-size: 1.1vw;
+}
+form button{
+    border: none;
+    background-color: var(--bleu);
+    color: white;
+    font-size: 1.8vw;
+    border-radius: 0.8vw;
+    padding: 0.2vw 0.8vw;
+    font-weight: 500;
+    margin-top: 1.5vw;
+    transition-duration: 200ms;
+}
+form button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+form p {
+    font-size: 1.2vw;
+    margin-top: 0.6vw;
+    background-color: rgb(255, 131, 131);
+    width: fit-content;
+    padding: 0.2vw 1vw;
+    justify-self: center;
+    color: white;
+    border-radius: 0.5vw;
+}

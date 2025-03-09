@@ -1,0 +1,148 @@
+:root {
+    --bleu: rgba(44, 62, 80, 1);
+    --orange: rgba(255, 152, 0, 1);
+    --vert: rgb(61, 143, 63);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+}
+main {
+    width: 82.5vw;
+    margin-left: 17.5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 2vw;
+}
+.ajout_voiture{
+    border: var(--bleu) 1px solid;
+    width: 80%;
+    margin-top: 2vw ;
+    text-align: center;
+    border-radius: 1.5vw;
+    transition-duration: 200ms;
+}
+.ajout_voiture a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    padding-top: 4vw;
+}
+.ajout_voiture a:hover{
+    color: white;
+}
+.ajout_voiture p{
+    font-size: 1.3vw;
+}
+.ajout_voiture span{
+    font-size: 3vw;
+    font-weight: 700;
+}
+.ajout_voiture:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: var(--bleu);
+    color: white;
+    border: 1px solid var(--vert);
+
+}
+
+.voiture {
+    width: 80%;
+}
+
+.voiture .img img {
+    height: 6vw;
+}
+
+.voiture .marque {
+    color: black;
+    position: relative;
+    top: 2.5vw;
+    background-color: rgba(217, 217, 217, 1);
+    text-align: center;
+    padding: 0.2vw 0;
+    border-radius: 0.5vw;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border: var(--bleu) 2px solid;
+    
+}
+
+.voiture .img {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    position: relative;
+    top: 2vw;
+}
+
+.voiture .detail {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 1vw;
+    padding: 2vw 1vw 1vw 1vw;
+    height: 16vw;
+    color:black;
+    border: var(--bleu) 1px solid;
+}
+
+.voiture .detail div {
+    margin-bottom: 0.2vw;
+    font-size: 1.1vw;
+}
+
+.statut {
+    font-size: 0.8vw;
+}
+
+.statut span {
+    background-color: var(--bleu);
+    padding: 0.1vw 0.4vw;
+    border-radius: 0.5vw;
+    color: white;
+    font-size: 0.8vw;
+}
+
+.voiture button {
+    display: block;
+    background-color: var(--bleu);
+    color: white;
+    border: none;
+    font-size: 1vw;
+    padding: 0.1vw 0.8vw;
+    transition-duration: 200ms;
+    justify-self: center;
+    margin-top: 0.4vw;
+    
+    border-radius: 0.8vw;
+
+}
+
+.voiture button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.voiture a{
+    display: block;
+    width: 10vw;
+        justify-self: center;
+        text-decoration: none;
+}
+.voiture a button{
+    background-color: white;
+    border: var(--bleu) 1px solid;
+    color: var(--bleu);
+    font-weight: 500;
+}
+.vr{
+    text-decoration: none;
+    width: 100%;
+}

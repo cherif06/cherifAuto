@@ -1,0 +1,70 @@
+:root {
+    --bleu: rgba(44, 62, 80, 1);
+    --vert: rgb(61, 143, 63);
+    --orange: rgba(255, 152, 0, 1)
+}
+.alerte_reservation{
+    display: none;
+    position: absolute;
+    top: 8vw;
+    left: 30vw;
+    background-color: rgb(40, 40, 40);
+    padding: 1.5vw 3vw;
+    border-radius: 1vw;
+    position: fixed;
+    z-index: 3;
+    width: 40vw;
+    text-align: center;
+}
+.alerte_prix button,.alerte_reservation button{
+    background-color: var(--bleu) ;
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 0.5vw; 
+    padding: 0 0.5vw;
+    display: inline-block;
+    margin-top: 1vw;
+    font-weight: 500;
+    transition-duration: 200ms;
+    margin-left: 1vw;
+}
+.alerte_reservation button:hover,.alerte_prix button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.alerte_reservation p,.alerte_prix p{
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.alerte_prix{
+    position: absolute;
+    top: 15svw;
+    left: 30vw;
+    background-color: rgb(40, 40, 40);
+    padding: 1.5vw 3vw;
+    border-radius: 1vw;
+    position: fixed;
+    z-index: 3;
+    width: 40vw;
+    text-align: center;
+}
+.notification{
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top: 8vw;
+    background-color: rgba(30, 30, 30, 0.92);
+    padding:1.5vw 3vw;
+    border-radius:1vw;
+    position: fixed;
+    z-index: 3;
+}
+
+.notification p{
+    font-size: 1.5vw;
+    color: white;
+}

@@ -1,0 +1,196 @@
+:root {
+    --bleu: rgba(44, 62, 80, 1);
+    --vert: rgb(61, 143, 63);
+    --orange : rgba(255, 152, 0, 1)
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+}
+main {
+    display: grid;
+    width: 82.5vw;
+    margin-left: 17.5vw;
+    height: 100vh;
+    background-color: rgba(242, 242, 242, 1);
+}
+.pblocs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw;
+    height: 35vh;
+}
+.pbloc{
+    background-color: white;
+    width: 22%;
+    height: 10vw;
+    border-radius: 0.6vw;
+    padding: 0.5vw 1vw;
+    box-shadow: var(--bleu) 0 0 1vw;
+}
+.pbloc h1{
+    font-size: 2.3vw;
+    color: var(--bleu);
+}
+.pbloc h2{
+    font-size: 1.5vw;
+    padding: 0.25vw 0;
+    color: var(--bleu);
+}
+.top{
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+}
+.top img{
+    height: 80%;
+    color: var(--vert);
+}
+.left{
+    height: 100%;
+}
+.pbloc p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: rgb(170, 170, 170);
+    height: 2.8vw;
+}
+.pbloc span{
+    font-size: 1.1vw;
+    margin-right: 0.5vw;
+    font-weight: 500;
+    background-color: var(--bleu);
+    color: white;
+    padding: 0.1vw 0.5vw;
+    border-radius: 0.5vw;
+}
+.pbloc button{
+    background-color: var(--bleu);
+    color: white;
+    font-size: 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.1vw 0.5vw;
+    display: inline-block;
+    font-weight: 500;
+    transition-duration: 200ms;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.gblocs{
+    display: flex;
+    justify-content: space-between;
+    padding:2vw 4vw 4vw 4vw;
+    height: 65vh ;
+}
+.gbloc{
+    background-color: white;
+    border-radius: 0.8vw;
+    box-shadow: var(--bleu) 0 0 1vw;
+}
+.rsv{
+    width: 37vw;
+}
+.pmt{
+    width: 35vw;    
+}
+.entete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--bleu);
+    height: 10%;
+    border-radius: 0.8vw 0.8vw 0 0;
+    padding: 0 1vw;
+    border-bottom: black 3px solid;
+}
+.entete h1{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.entete button{
+    background-color: var(--bleu);
+    color: white;
+    font-size: 1.1vw;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.1vw 0.5vw;
+    margin-right: 1vw;
+    display: inline-block;
+    font-weight: 500;
+    transition-duration: 200ms;
+}
+.reservations{
+    padding: 1vw;
+    overflow-y: scroll;
+    height: 90%;
+}
+.reservation{
+    background-color: rgba(242, 242, 242, 1);
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    margin: 0 1vw 1vw 1vw;
+}
+.reservation form{
+    display: flex;
+}
+.reservation .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.reservation button{
+    background-color: rgb(222, 222, 222);
+    color: black;
+    font-size: 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 0.1vw 0.5vw;
+    display: inline-block;
+    font-weight: 500;
+    transition-duration: 200ms;
+}
+.reservation span{
+    display: inline-block;
+}
+.reservation .montant{
+    width: 100%;
+}
+.reservation .email{
+    width: 100%;
+    font-size: 1.1vw;
+}
+.reservation .voiture{
+    width: 55%;
+}
+.reservation .plaque{
+    width: 40%;
+}
+.reservation .periode{
+    width: 100%;
+}
+.paiements{
+    display: grid;
+    grid-template-columns: 22% 53% 25%;
+    row-gap: 0.8vw;
+    font-size: 1.1vw;
+    padding: 0.5vw 1vw;
+    color: black;
+}
+.paiements span{
+border-bottom: 1px black solid;
+}
+.paiements .tete{
+    font-size: 1.5vw;
+    border: none;
+}

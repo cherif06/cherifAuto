@@ -1,0 +1,109 @@
+:root {
+    --bleu: rgba(44, 62, 80, 1);
+    --vert: rgb(61, 143, 63);
+    --orange: rgba(255, 152, 0, 1)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 98.9vw;
+}
+.partie1{
+    background-image: url('../img/backgroud-acceuil.png');
+    background-size: cover;
+    width: 100%;
+    padding: 12vw 0 0 10vw;
+    color: white;
+    height: 42vw;
+}
+.partie1 h1{
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    letter-spacing: 0.2vw;
+}
+.partie1 p{
+    font-size: 1.5vw;
+    width: 50vw;
+    backdrop-filter: blur(10px);
+    padding: 1vw;
+    border-radius: 1vw;
+    box-shadow: var(--bleu) 0 0 2vw;
+    position: absolute;
+    z-index: 1;
+}
+.partie2 {
+    display: flex;
+    margin: 6vw 10vw 10vw 10vw;
+    justify-content: space-between;
+}
+.partie2 .image{
+    width: 40vw;
+}
+.partie2 .image img{
+    width: 100%;
+}
+.partie2 .texte{
+    width: 50vw;
+    padding:3vw 0 0 8vw;
+}
+.partie2 .texte h2{
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+}
+.partie2 .texte p{
+    width: 45vw;  
+    font-size: 1.6vw;
+    line-height: 2vw;
+    letter-spacing: 0.12vw;
+}
+.partie2 .texte button{
+    margin: 4vw 0 0 7vw;
+    background-color: var(--bleu);
+    color: white;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2vw;
+    padding: 0.5vw 1vw;
+    transition-duration: 200ms;
+}
+.partie2 .texte button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.partie3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partie3 p{
+    font-size: 1.6vw;
+    line-height: 2vw;
+    letter-spacing: 0.12vw;
+    border-top: black 1px solid;
+    padding-top: 1vw;
+}
+.partie3 button{
+    background-color: var(--bleu);
+    color: white;
+    border-radius: 1vw;
+    border: none;
+    font-size: 1.6vw;
+    padding: 0.5vw 1vw;
+    transition-duration: 200ms;
+    margin: 2vw 0 4vw 0;
+}
+.partie3 button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+ 
