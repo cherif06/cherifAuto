@@ -95,7 +95,7 @@ $reservations = $requete->fetchAll();
             <?php endforeach; ?>
         </div>
     <?php else :?>
-        <p>Aucune reservation</p>
+        <p class="no_reserv" >Aucune reservation</p>
     <?php endif;?>
 
         <?php if(isset($_SESSION['message'])) : ?>

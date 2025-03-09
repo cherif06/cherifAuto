@@ -17,6 +17,7 @@ main{
     margin-left: 17.5vw;
     display: grid;
     background-color: rgba(242, 242, 242, 1);
+    min-height: 100vh;
 }
 .reservations {
     margin:2vw 0;
