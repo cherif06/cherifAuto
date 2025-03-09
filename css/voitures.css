@@ -67,14 +67,15 @@ main .texte p{
 .voiture .detail{
     background-color: rgba(217, 217, 217, 1);
     border-radius: 1vw;
-    padding: 2vw 1vw 1vw 1vw;
+    padding: 2vw 0.8vw 1vw 0.8vw;
     height: 15vw;
     border: var(--bleu) 1px solid;
 }
 .voiture .detail div{
-    margin-bottom: 0.5vw;
-    font-size: 1.1vw;
+    margin-bottom: 0.4vw;
+    font-size: 1vw;
 }
+
 .statut{
     font-size: 0.8vw;
 }
@@ -86,16 +87,23 @@ main .texte p{
     font-size: 0.8vw;
 }
 .voiture button{
+    display: block;
     background-color: var(--bleu);
     color: white;
     border-radius: 0.8vw;
     border: none;
     font-size: 1.2vw;
     padding: 0.1vw 0.8vw;
-    margin-left: 1vw;
+    justify-self: center;
+    margin-top: 1vw;
     transition-duration: 200ms;
 }
 .voiture button:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+.detail div {
+    background-color: white;
+    padding: 0.1vw 0.3vw;
+    border-radius: 0.5vw;
 }
