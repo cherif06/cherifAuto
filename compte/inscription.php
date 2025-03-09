@@ -27,7 +27,7 @@
             $requete = $connect->prepare($sql);
             $requete->execute();
             $match=$requete->fetch();
-            if ($match) {
+            if ($match==$email) {
                 $php_errormsg = 'Compte deja existant';
             }else{
                 $password = password_hash($password, PASSWORD_BCRYPT);
