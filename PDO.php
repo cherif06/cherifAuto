@@ -1,9 +1,9 @@
 <?php
 
-    $dbhost = 'localhost';
-    $dbname = 'cherifauto';
-    $dbuser = 'root';
-    $dbpswd = '';
+    $dbhost = 'mysql-siteweb.alwaysdata.net';
+    $dbname = 'siteweb_bd_cherifauto';
+    $dbuser = 'siteweb';
+    $dbpswd = 'Cherif@06';
     try{
         $connect = new PDO('mysql:host='.$dbhost.';dbname='.$dbname,$dbuser,$dbpswd,
         array(
